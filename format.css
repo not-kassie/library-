@@ -1,0 +1,58 @@
+html, 
+
+html{
+    height: 100%;
+    background-image: url('word.jpeg');
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    margin: 50px 200px;
+    height: 90%;
+    background-color: #D0F0C0;
+    opacity: 0.90;
+    border-radius: 30px;
+    display: grid;
+    grid-template-rows: 2fr 6fr 1fr;
+    box-sizing: border-box;
+}
+
+*  {
+    overflow: hidden; 
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box;
+    font-family: Garamond, "Times New Roman", Times, serif;
+    margin: 0px;
+}
+
+.title{
+    text-align: center;
+    font-size: 50px;
+    color: #00401A;
+    padding: 20px;
+
+}
+
+.add{   
+    border: none; 
+    background-color: transparent; 
+    color: #00401A;
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 70px;
+    cursor: pointer; 
+}
+
+.position{
+    display: grid;
+    justify-content: end;
+    align-content: start;
+}
+
+.top{
+    width: auto; 
+    height: auto;
+}
+
