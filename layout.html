@@ -13,14 +13,32 @@
     <header class="title">Finding Happiness: A Library</header>
   </div>
 
-  <div class = "contain">
+  <div id = "contain">
     <!-- container for books here-->
 
   </div>
   
   <div class="position">
-    <button class="add">+</button>
+    <button class="add" onclick="openForm()">+</button>
+    <div class = "formPop" id = "myForm">
+      <form class = "add-container">
+        <h1 class = "subtext">a new tale</h1>
+
+        <label for="title"><b>Title: </b></label>
+        <input type="text" id = 'title' placeholder = "Title:" name = "title" required>
+
+        <label for="author"><b>Author: </b></label>
+        <input type="text" id = 'author' placeholder = "Author:" name = "author" required>
+
+        <label for="pageCount"><b>Page Count: </b></label>
+        <input type="text" id = 'pageCount' placeholder = "Page Count:" name = "pageCount" required>
+
+        <button type = "submit" id = 'btn' class="btn" onclick="processInput()">Add</button>
+        <button type = "button" class = "btn" onclick="closeForm()">Close</button>
+      </form>
+    </div>
   </div>
+
  
   <script src="rules.js"></script>
 </body>
